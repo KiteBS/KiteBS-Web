@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@headlessui/react':
     specifier: ^1.7.17
@@ -75,6 +79,9 @@ devDependencies:
   lint-staged:
     specifier: ^15.0.2
     version: 15.0.2
+  pnpm:
+    specifier: ^7.30.0
+    version: 7.33.6
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
@@ -2696,6 +2703,12 @@ packages:
   /pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /pnpm@7.33.6:
+    resolution: {integrity: sha512-kOJ/04BH8YWD8zQveEzD8Yf01MqsievB//rhjc17Ld52eKC/I3SBvLj36OZhNfo0gDhW5OssRCzggv+rXZ0kHw==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: true
 
   /postcss-import@15.1.0(postcss@8.4.31):
