@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 
-import NotFound from 'app/not-found';
 import Prose from 'components/prose';
 import { getPage } from 'lib/wix';
 import { notFound } from 'next/navigation';
@@ -14,7 +13,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const page = await getPage(params.page);
 
-  if (!page) return NotFound;
+  if (!page) return notFound();
 
   return {
     title: page.seo?.title || page.title,
